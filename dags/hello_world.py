@@ -4,7 +4,7 @@ from airflow.utils.dates import days_ago
 import os
 import pandas as pd
 
-from helpers import LocalFileSystemStagingDatabase
+from plugins.helpers import LocalFileSystemStagingDatabase
 
 @dag(schedule_interval=None, start_date=days_ago(2), tags=['hello_world'])
 def hello_world():
